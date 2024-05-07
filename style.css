@@ -1,0 +1,338 @@
+/* Google Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;600&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  min-height: 100dvh;
+  font-family: "Bai Jamjuree", sans-serif;
+  text-align: center;
+}
+
+a {
+  display: inline-block;
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+h1,
+h2,
+h3 {
+  color: #4c545a;
+  margin-bottom: 1.5rem;
+}
+
+h2 {
+  font-size: 2.8rem;
+}
+
+h3 {
+  font-size: 2.5rem;
+}
+
+p {
+  font-size: 1.6rem;
+  line-height: 1.5;
+  opacity: 0.5;
+}
+
+/* General Style */
+.wrapper {
+  padding: 0 2rem;
+}
+
+.section-padding {
+  padding: 8rem 0;
+}
+
+.btn {
+  padding: 1.5rem 4rem;
+  color: white;
+  border-radius: 50px;
+  cursor: pointer;
+  font-size: 1.6rem;
+}
+
+.btn--green {
+  background-color: #26baa4;
+}
+
+.btn--green:hover {
+  background-color: #2ddac0;
+}
+
+.btn--blue {
+  background-color: #6173ff;
+}
+
+.btn--blue:hover {
+  background-color: #8794fc;
+}
+
+/* Hero Section */
+
+.hero-section {
+  background-image: url("img/bg-header-mobile.png");
+  background-repeat: no-repeat;
+
+  padding: 2rem 2rem 5rem;
+}
+
+.logo img {
+  margin: 10rem auto;
+}
+
+.hero-section h1 {
+  font-size: 3rem;
+}
+
+.hero-btns,
+.clipboard-btns {
+  padding: 4rem 0;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+/* Snippet Section */
+
+.snippet-img-box img {
+  margin-bottom: 5rem;
+}
+
+.snippet-info p {
+  margin-bottom: 5rem;
+}
+
+.snippet-text-box {
+  display: flex;
+  flex-direction: column;
+  gap: 5rem;
+}
+
+/* Access Section */
+
+.access-info p {
+  margin-bottom: 5rem;
+}
+
+/* Supercharge Section */
+
+.supercharge-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 5rem;
+}
+
+.supercharge-icon img {
+  margin: 0 auto 4rem;
+}
+
+/* Logos Section */
+
+.logos {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+
+.logos img {
+  margin: 0 auto 4rem;
+}
+
+/* Footer Section */
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+  background-color: #f5f6f8;
+  width: 100%;
+  padding: 4rem;
+}
+
+.footer-logo img {
+  width: 6rem;
+  margin: 0 auto 4rem;
+}
+
+.nav ul {
+  display: flex;
+  flex-direction: column;
+}
+
+.nav li a {
+  color: #4c545a;
+  font-size: 1.8rem;
+  margin-bottom: 3rem;
+}
+
+.social-icons {
+  display: flex;
+  justify-content: center;
+  gap: 3rem;
+}
+
+/* Responsive */
+
+@media (min-width: 376px) {
+  .hero-section {
+    background-image: url("img/bg-header-desktop.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+}
+
+@media (min-width: 768px) {
+  .hero-btns,
+  .clipboard-btns {
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .footer-logo img {
+    width: 6rem;
+    margin: 0 auto 3rem;
+  }
+
+  .nav ul {
+    flex-direction: row;
+    justify-content: center;
+    gap: 4rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .container {
+    max-width: 90rem;
+    text-align: center;
+    margin: 0 auto;
+  }
+
+  .hero-section h1 {
+    font-size: 5rem;
+  }
+
+  .hero-section p {
+    font-size: 2rem;
+    width: 50%;
+    margin: auto;
+  }
+
+  .wrapper {
+    padding: 0;
+  }
+
+  .snippet-wrapper {
+    display: flex;
+  }
+
+  .snippet-info h2,
+  .access-info h2,
+  .supercharge-info h2,
+  .clipboard-info h2 {
+    font-size: 3.5rem;
+  }
+
+  .snippet-info p {
+    font-size: 2rem;
+    width: 70%;
+    margin: auto;
+    margin-bottom: 10rem;
+  }
+
+  .access-info p,
+  .supercharge-info p,
+  .clipboard-info p {
+    font-size: 2rem;
+    width: 60%;
+    margin: auto;
+    margin-bottom: 5rem;
+  }
+
+  .snippet-img-box img {
+    margin-left: -3rem;
+  }
+
+  .snippet-text-box {
+    padding: 3rem;
+    text-align: left;
+  }
+
+  .access-img-box img {
+    margin: auto;
+  }
+
+  .supercharge-wrapper,
+  .logos {
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .footer {
+    padding: 4rem 0;
+  }
+
+  .footer-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 6rem;
+  }
+
+  .footer-logo img {
+    margin: 0;
+  }
+
+  .nav li a {
+    margin: 0;
+  }
+
+  .social-icons {
+    gap: 3rem;
+  }
+}
+
+@media (min-width: 1440px) {
+  .container {
+    max-width: 110rem;
+    text-align: center;
+    margin: 0 auto;
+  }
+
+  .hero-section p,
+  .snippet-info p,
+  .access-info p,
+  .clipboard-info p {
+    width: 40%;
+  }
+
+  .snippet-img-box img {
+    width: 1000px;
+  }
+
+  .snippet-text-box {
+    padding: 6rem 8rem;
+  }
+
+  .snippet-text-box p {
+    width: 55%;
+  }
+}
